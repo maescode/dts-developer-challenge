@@ -4,14 +4,15 @@ This guide explains how to start both the backend (API) and frontend (UI) for lo
 
 Note:
 
-- The frontend expects the backend API to be running at http://localhost:3001
+- The frontend expects the backend API to be running at <http://localhost:3001>
 - For development, always start the backend first, then the frontend.
 
 ## Backend (Task Management API)
 
 1. Install dependencies:
 
-```cd backend
+```bash
+cd backend
 npm install
 ```
 
@@ -25,27 +26,32 @@ npm install
 
 1. Install dependencies:
 
-```cd frontend
+```bash
+cd frontend
 yarn install
 ```
 
 2. Build frontend assets:
-   yarn webpack
+
+`yarn webpack`
 
 3. Start the frontend in development mode:
 
 `yarn start:dev`
 
-This will run a script that generates SSL certificates (if needed) and starts the server on https://localhost:3100.
+This will run a script that generates SSL certificates (if needed) and starts the server on <https://localhost:3100>.
 
 Thank you
 
 ## To start the backend and frontend concurrently (Easy)
 
 Open your terminal and navigate to the root folder of the project
-`cd dts-developer-challenge`
-`npm install`
-`npm run start`
+
+```bash
+ cd dts-developer-challenge
+ npm install
+ npm run start
+```
 
 - The backend server will start on port 3001 by default.
 - The frontend will start on port 3100 by default.
