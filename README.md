@@ -1,0 +1,37 @@
+# Getting Started: DTS Developer Technical Test
+
+This guide explains how to start both the backend (API) and frontend (UI) for local development.
+
+Note: 
+- The frontend expects the backend API to be running at http://localhost:3001
+- For development, always start the backend first, then the frontend.
+
+## Backend (Task Management API)
+1. Install dependencies:
+
+cd backend
+npm install
+
+2. Start the backend in development mode:
+
+npm run dev
+
+- The backend server will start on port 3001 by default.
+
+## Frontend (HMCTS Dev Test Frontend)
+
+1. Install dependencies:
+
+cd frontend
+yarn install
+
+2. Build frontend assets:
+yarn webpack
+
+3. Start the frontend in development mode:
+
+yarn start:dev
+
+This will run a script that generates SSL certificates (if needed) and starts the server on https://localhost:3100.
+
+Thank you
